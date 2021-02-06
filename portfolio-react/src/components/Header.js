@@ -8,7 +8,7 @@ import '../style/header.css';
 
 function Header() {
   const btnList = headerButtons;
-  const TileName = "Meu Nome";
+  const TileName = 'Meu Nome';
   const bType = 'header-btn';
   const iconEndpoint = 'LucasSGomide';
   const altGitHub = 'github icon';
