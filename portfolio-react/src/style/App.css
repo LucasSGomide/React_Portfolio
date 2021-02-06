@@ -1,0 +1,12 @@
+* {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+body {
+  background: url('./images/background2.jpg');
+  /* background-repeat:no-repeat; */
+  /* background-position:center center; */
+  background-attachment: fixed;
+  background-size: 100%;
+}
