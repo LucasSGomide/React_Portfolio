@@ -1,13 +1,15 @@
 import React from 'react';
 import Button from './Button';
 import headerButtons from '../data/headerButtons';
+import '../style/header.css';
 
 function Header() {
-  const buttonsList = headerButtons;
+  const btnList = headerButtons;
+  const type = 'header-btn';
 
   return (
-    <nav>
-      { buttonsList.map((btn) => <Button buttonName={ btn } key={ `btn-${btn}` } />) }
+    <nav className="header">
+      { btnList.map((btn) => <Button btnName={ btn } btnType={ type } key={ btn } />) }
     </nav>
   );
 }
