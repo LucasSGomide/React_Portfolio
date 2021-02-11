@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import devInfo from '../data/devInfo';
 
-function ContactIcons({ source, user, altTxt }) {
-  const gitHubURL = 'https://github.com/';
-  const linkedInURL = 'https://www.linkedin.com/in/';
-  const userEndpoint = user.toLowerCase();
+function ContactIcons({ source, altTxt }) {
+  const gitHubURL = devInfo.links.github;
+  const linkedInURL = devInfo.links.linkedin;
 
   if (altTxt === 'linkedin icon') {
     return (
-      <a href={ `${linkedInURL}${userEndpoint}` } target="_blank" rel="noreferrer">
+      <a href={ `${linkedInURL}` } target="_blank" rel="noreferrer">
         <img src={ source } alt={ altTxt } className="icons" />
       </a>
     );
   }
 
   return (
-    <a href={ `${gitHubURL}${userEndpoint}` } target="_blank" rel="noreferrer">
+    <a href={ `${gitHubURL}` } target="_blank" rel="noreferrer">
       <img src={ source } alt={ altTxt } className="icons" />
     </a>
   );
