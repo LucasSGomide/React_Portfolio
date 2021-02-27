@@ -50,7 +50,7 @@ function ProjectList() {
                 <div className="card mb-4 shadow-sm">
                   {renderImages(devInfo.uteis.githubUser, element.name)}
                   <div className="card-body">
-                    {/* IMG GIGANTE*/}
+                    {/* IMG GIGANTE AQUI*/}
                     <p className="card-text">{element.description}</p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
