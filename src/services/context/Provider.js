@@ -5,14 +5,20 @@ import Context from './Context';
 function Provider({ children }) {
   const [user, setUser] = useState(false);
   const [repos, setRepos] = useState(false);
+  const [activeFilter, setActiveFilter] = useState('Todos');
 
-  console.log(repos);
+  const testActiveFilter = async (name) => {
+    setActiveFilter(name);
+  };
 
   const contextValue = {
     user,
     setUser,
     repos,
-    setRepos
+    setRepos,
+    activeFilter,
+    setActiveFilter,
+    testActiveFilter,
   };
 
   return (

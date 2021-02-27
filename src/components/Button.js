@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import Context from '../services/context/Context';
 
 function Button({ btnName, btnType }) {
+  const { setActiveFilter, testActiveFilter } = useContext(Context);
   const btnHeader = 'header-btn';
 
   if (btnType === btnHeader) {
@@ -17,6 +19,7 @@ function Button({ btnName, btnType }) {
   return (
     <button
       className="btn btn-outline-secondary"
+      onClick={ () => testActiveFilter(btnName) }
       type="button"
     >
       { btnName }

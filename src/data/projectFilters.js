@@ -1,9 +1,7 @@
 const projectFilters = [
   'Todos',
-  'Testes Unitários',
-  'Front End',
-  'Back End',
-  'Base de Dados',
+  'Front-End',
+  'Back-End',
 ];
 
 export default projectFilters;
