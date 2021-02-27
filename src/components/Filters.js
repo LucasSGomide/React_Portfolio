@@ -6,7 +6,7 @@ function Filters() {
   const filterList = projectFilters;
   const type = 'filter-btn';
   return (
-    <div>
+    <div className="app-btn-filter">
       { filterList.map((flt) => <Btn btnName={ flt } btnType={ type } key={ flt } />) }
     </div>
   );

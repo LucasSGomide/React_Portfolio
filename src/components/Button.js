@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../style/button.css';
 
 function Button({ btnName, btnType }) {
   const btnHeader = 'header-btn';
@@ -17,7 +16,7 @@ function Button({ btnName, btnType }) {
   }
   return (
     <button
-      className="filter-btn"
+      className="btn btn-outline-secondary"
       type="button"
     >
       { btnName }
