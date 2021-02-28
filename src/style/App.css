@@ -3,6 +3,20 @@
   padding: 0;
 }
 
+.home {
+  height: 100vh;
+  background-image: url(./images/background4.jpg);
+}
+
+.container-home {
+  margin-top: 75px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+}
+
 .foto-perfil {
   height: 100%;
   width: auto;
@@ -12,7 +26,7 @@
 }
 
 .corPrimaria {
-  background-color: aquamarine;
+  color: rgb(172, 170, 170); ;
 }
 
 .corSecundaria {
@@ -26,11 +40,11 @@ p {
 
 .icones {
   padding-left: 5px;
-  color: black;
+  color: rgb(172, 170, 170);
 }
 
 .icones:hover {
-  color:gray
+  color:rgb(240, 235, 235)
 }
 
 .titulosBrancos {
@@ -67,6 +81,24 @@ p {
 
 .app-btn-filter  button{
   margin: 30px 15px 30px 0px;
+}
+
+.box-footer {
+  display:flex;
+  justify-content: space-between;
+  margin: 0px 10px 0px 10px;
+}
+
+.box-footer-left {
+  display: flex;
+}
+
+.box-footer-left p {
+  margin-left: 10px;
+}
+
+footer {
+  height: 50px;
 }
 
 html {

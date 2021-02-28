@@ -3,9 +3,9 @@ import devInfo from '../data/devInfo';
 
 function AboutRead() {
   return (
-    <section className="jumbotron text-center corPrimaria">
+    <section className="jumbotron text-center corPrimaria" id="sobre">
       <div className="container">
-        <h2 className="jumbotron-heading" id="sobre">Sobre Mim</h2>
+        <h2 className="jumbotron-heading">Sobre Mim</h2>
         <p className="lead">{devInfo.description.fullDescription}</p>
       </div>
     </section>

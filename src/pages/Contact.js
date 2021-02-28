@@ -10,6 +10,7 @@ function Contact() {
     emailjs.sendForm('service_6dj816f', 'template_9mtlepn', e.target, 'user_jxPjNBQBnyVPQ0lL8jNxr')
       .then((result) => {
           console.log(result.text);
+          alert(`Sua mensagem foi enviada com sucesso! em breve entraremos em contato com você!`);
       }, (error) => {
           console.log(error.text);
       });
@@ -17,10 +18,10 @@ function Contact() {
   }
 
   return (
-    <section>
+    <section id="contato">
       <div>
         <div className="container-fluid" onSubmit={sendEmail} >
-          <h3 className="text-center" id="contato">Disponivel para oportunidades</h3>
+          <h3 className="text-center" >Disponivel para oportunidades</h3>
           <h4 className="text-center"><i className="fas fa-envelope-square icones fa-lg"></i> {devInfo.links.email}</h4>
           <h4 className="text-center"><i className="fab fa-whatsapp-square icones fa-lg"> </i> {devInfo.whatsapp}</h4> 
           <h4 className="text-center">Sinta-se a vontade de entrar em contato diretamente ou pelo nosso sistema de mensagens abaixo</h4>
